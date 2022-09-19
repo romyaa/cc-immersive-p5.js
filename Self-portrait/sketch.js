@@ -1,8 +1,6 @@
-var gif_loadImg, gif_createImg;
-
 function preload() {
-  disco_ball = loadImage("media/disco-ball.gif");
-  dancer1 = loadImage("media/dancer1.gif");
+  disco_ball = loadImage("media/disco-ball-2.gif");
+  dancer1 = loadImage("media/dancer-ghost.gif");
   dancer2 = loadImage("media/dancer2.gif");
   checker = loadImage("media/checker.png");
 }
@@ -19,7 +17,7 @@ function setup(){
     colors[6] = color(219,62,177); // fushia
     colors[7] = color(104,71,141); // royal purple
 
-    frameRate(3);
+    frameRate(4);
 }
 
 var eyeX = 270;
@@ -46,7 +44,7 @@ function draw() {
     vertex(eyeX+100,eyeY);
     vertex(eyeX+40,eyeY+30);
     endShape(CLOSE);
-    image(disco_ball, eyeX+14,eyeY-33);
+    image(disco_ball, eyeX+14,eyeY-36);
 
     /* left eye */
     beginShape();
